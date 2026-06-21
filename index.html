@@ -1,727 +1,147 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2870
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww27960\viewh14260\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Olive Advisory | Fractional CFO, Bookkeeping & Strategic Finance</title>
+  <meta name="description" content="Olive Advisory provides fractional CFO, bookkeeping, cash flow forecasting, and strategic finance services for growing businesses." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Olive Advisory Home">
+      <span class="brand-main">OLIVE</span>
+      <span class="brand-sub">ADVISORY</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#why">Why Olive</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-<meta charset="UTF-8" />\
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />\
-<title>Olive Advisory | Fractional CFO, Bookkeeping & Strategic Finance</title>\
-\
-<style>\
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap');\
-\
-:root \{\
-  --ivory: #faf6ef;\
-  --cream: #f1eadf;\
-  --olive: #73775b;\
-  --deep: #172019;\
-  --charcoal: #2f342d;\
-  --stone: #9b9487;\
-  --line: #d6cbbd;\
-  --white: #ffffff;\
-\}\
-\
-* \{\
-  margin: 0;\
-  padding: 0;\
-  box-sizing: border-box;\
-\}\
-\
-html \{\
-  scroll-behavior: smooth;\
-\}\
-\
-body \{\
-  background: var(--ivory);\
-  color: var(--deep);\
-  font-family: "Inter", sans-serif;\
-  overflow-x: hidden;\
-\}\
-\
-/* ---------- NAV ---------- */\
-\
-nav \{\
-  position: fixed;\
-  top: 0;\
-  width: 100%;\
-  padding: 24px 7%;\
-  display: flex;\
-  justify-content: space-between;\
-  align-items: center;\
-  z-index: 999;\
-  background: rgba(250, 246, 239, 0.78);\
-  backdrop-filter: blur(18px);\
-  border-bottom: 1px solid rgba(214,203,189,.55);\
-\}\
-\
-.logo \{\
-  font-family: "Cormorant Garamond", serif;\
-  font-size: 30px;\
-  letter-spacing: 8px;\
-  font-weight: 500;\
-\}\
-\
-.logo small \{\
-  display: block;\
-  font-family: "Inter", sans-serif;\
-  font-size: 10px;\
-  letter-spacing: 5px;\
-  color: var(--olive);\
-  margin-top: -5px;\
-  text-align: center;\
-\}\
-\
-.nav-links a \{\
-  margin-left: 30px;\
-  text-decoration: none;\
-  color: var(--deep);\
-  font-size: 13px;\
-  letter-spacing: 1.5px;\
-  text-transform: uppercase;\
-\}\
-\
-.nav-links a:hover \{\
-  color: var(--olive);\
-\}\
-\
-/* ---------- HERO ---------- */\
-\
-.hero \{\
-  min-height: 100vh;\
-  padding: 150px 7% 80px;\
-  display: grid;\
-  grid-template-columns: 1.15fr .85fr;\
-  align-items: center;\
-  gap: 60px;\
-  position: relative;\
-  overflow: hidden;\
-\}\
-\
-.hero::before \{\
-  content: "";\
-  position: absolute;\
-  width: 600px;\
-  height: 600px;\
-  border-radius: 50%;\
-  background: radial-gradient(circle, rgba(115,119,91,.28), transparent 68%);\
-  right: -150px;\
-  top: 110px;\
-  z-index: 0;\
-\}\
-\
-.hero-content \{\
-  position: relative;\
-  z-index: 2;\
-\}\
-\
-.kicker \{\
-  text-transform: uppercase;\
-  letter-spacing: 4px;\
-  color: var(--olive);\
-  font-size: 12px;\
-  margin-bottom: 26px;\
-\}\
-\
-.hero h1 \{\
-  font-family: "Cormorant Garamond", serif;\
-  font-size: clamp(58px, 8vw, 118px);\
-  line-height: .88;\
-  font-weight: 400;\
-  max-width: 880px;\
-\}\
-\
-.hero h1 em \{\
-  font-style: italic;\
-  color: var(--olive);\
-\}\
-\
-.hero p \{\
-  margin-top: 34px;\
-  max-width: 610px;\
-  font-size: 20px;\
-  line-height: 1.7;\
-  color: #40463d;\
-\}\
-\
-.buttons \{\
-  margin-top: 38px;\
-  display: flex;\
-  gap: 16px;\
-  flex-wrap: wrap;\
-\}\
-\
-.btn \{\
-  display: inline-block;\
-  padding: 15px 28px;\
-  border-radius: 999px;\
-  text-decoration: none;\
-  font-size: 13px;\
-  letter-spacing: 1.5px;\
-  text-transform: uppercase;\
-  transition: .3s ease;\
-\}\
-\
-.btn-primary \{\
-  background: var(--deep);\
-  color: white;\
-\}\
-\
-.btn-primary:hover \{\
-  background: var(--olive);\
-\}\
-\
-.btn-secondary \{\
-  border: 1px solid var(--deep);\
-  color: var(--deep);\
-\}\
-\
-.btn-secondary:hover \{\
-  background: var(--deep);\
-  color: white;\
-\}\
-\
-/* ---------- ORBIT CARD ---------- */\
-\
-.orbit-wrap \{\
-  position: relative;\
-  z-index: 2;\
-  display: flex;\
-  justify-content: center;\
-\}\
-\
-.orbit \{\
-  width: 420px;\
-  height: 420px;\
-  border-radius: 50%;\
-  border: 1px solid var(--olive);\
-  position: relative;\
-  animation: float 6s ease-in-out infinite;\
-\}\
-\
-.orbit::before \{\
-  content: "";\
-  position: absolute;\
-  inset: 54px;\
-  border-radius: 50%;\
-  border: 1px solid var(--line);\
-\}\
-\
-.orbit::after \{\
-  content: "";\
-  position: absolute;\
-  width: 18px;\
-  height: 18px;\
-  background: var(--olive);\
-  border-radius: 50%;\
-  top: 50px;\
-  right: 92px;\
-  box-shadow: -260px 230px 0 rgba(115,119,91,.45);\
-\}\
-\
-.orbit-center \{\
-  position: absolute;\
-  inset: 118px;\
-  background: rgba(255,255,255,.62);\
-  border: 1px solid var(--line);\
-  border-radius: 50%;\
-  display: flex;\
-  align-items: center;\
-  justify-content: center;\
-  text-align: center;\
-  backdrop-filter: blur(10px);\
-  font-family: "Cormorant Garamond", serif;\
-  font-size: 30px;\
-  line-height: 1.15;\
-\}\
-\
-@keyframes float \{\
-  0%, 100% \{ transform: translateY(0); \}\
-  50% \{ transform: translateY(-18px); \}\
-\}\
-\
-/* ---------- MARQUEE ---------- */\
-\
-.marquee \{\
-  border-top: 1px solid var(--line);\
-  border-bottom: 1px solid var(--line);\
-  background: var(--cream);\
-  overflow: hidden;\
-  white-space: nowrap;\
-\}\
-\
-.marquee-track \{\
-  display: inline-block;\
-  padding: 18px 0;\
-  animation: marquee 30s linear infinite;\
-  font-family: "Cormorant Garamond", serif;\
-  font-size: 30px;\
-  color: var(--olive);\
-\}\
-\
-@keyframes marquee \{\
-  from \{ transform: translateX(0); \}\
-  to \{ transform: translateX(-50%); \}\
-\}\
-\
-/* ---------- SECTIONS ---------- */\
-\
-section \{\
-  padding: 100px 7%;\
-\}\
-\
-.split \{\
-  display: grid;\
-  grid-template-columns: .85fr 1.15fr;\
-  gap: 70px;\
-  align-items: start;\
-\}\
-\
-h2 \{\
-  font-family: "Cormorant Garamond", serif;\
-  font-size: clamp(42px, 5vw, 70px);\
-  font-weight: 400;\
-  line-height: 1;\
-\}\
-\
-.subtext \{\
-  color: #4f554b;\
-  font-size: 18px;\
-  line-height: 1.8;\
-  max-width: 680px;\
-\}\
-\
-/* ---------- SERVICES ---------- */\
-\
-.services-grid \{\
-  display: grid;\
-  grid-template-columns: repeat(2, 1fr);\
-  gap: 22px;\
-\}\
-\
-.service-card \{\
-  background: rgba(255,255,255,.58);\
-  border: 1px solid var(--line);\
-  padding: 34px;\
-  min-height: 250px;\
-  position: relative;\
-  overflow: hidden;\
-  transition: .35s ease;\
-\}\
-\
-.service-card::after \{\
-  content: "";\
-  position: absolute;\
-  width: 130px;\
-  height: 130px;\
-  background: rgba(115,119,91,.1);\
-  border-radius: 50%;\
-  right: -40px;\
-  bottom: -40px;\
-  transition: .35s ease;\
-\}\
-\
-.service-card:hover \{\
-  transform: translateY(-10px);\
-  background: white;\
-\}\
-\
-.service-card:hover::after \{\
-  transform: scale(1.6);\
-\}\
-\
-.service-card span \{\
-  color: var(--olive);\
-  font-family: "Cormorant Garamond", serif;\
-  font-size: 40px;\
-\}\
-\
-.service-card h3 \{\
-  font-family: "Cormorant Garamond", serif;\
-  font-size: 32px;\
-  font-weight: 400;\
-  margin: 20px 0 12px;\
-\}\
-\
-.service-card p \{\
-  color: #52584d;\
-  line-height: 1.7;\
-\}\
-\
-/* ---------- STATEMENT ---------- */\
-\
-.statement \{\
-  background: var(--deep);\
-  color: white;\
-  text-align: center;\
-  position: relative;\
-  overflow: hidden;\
-\}\
-\
-.statement::before \{\
-  content: "OLIVE";\
-  position: absolute;\
-  font-family: "Cormorant Garamond", serif;\
-  font-size: 220px;\
-  letter-spacing: 28px;\
-  color: rgba(255,255,255,.035);\
-  left: 50%;\
-  top: 50%;\
-  transform: translate(-50%, -50%);\
-\}\
-\
-.statement h2 \{\
-  position: relative;\
-  z-index: 1;\
-  max-width: 980px;\
-  margin: auto;\
-\}\
-\
-.statement em \{\
-  color: #cfc9a8;\
-\}\
-\
-/* ---------- PROCESS ---------- */\
-\
-.process-grid \{\
-  display: grid;\
-  grid-template-columns: repeat(3, 1fr);\
-  gap: 26px;\
-  margin-top: 50px;\
-\}\
-\
-.process-card \{\
-  border-left: 1px solid var(--olive);\
-  padding: 10px 0 10px 28px;\
-\}\
-\
-.process-card span \{\
-  font-family: "Cormorant Garamond", serif;\
-  font-size: 54px;\
-  color: var(--olive);\
-\}\
-\
-.process-card h3 \{\
-  font-family: "Cormorant Garamond", serif;\
-  font-size: 34px;\
-  font-weight: 400;\
-  margin: 12px 0;\
-\}\
-\
-.process-card p \{\
-  line-height: 1.7;\
-  color: #50564d;\
-\}\
-\
-/* ---------- DIFFERENT SECTION ---------- */\
-\
-.unique \{\
-  background: linear-gradient(135deg, #efe7db, #fbf7ef);\
-\}\
-\
-.unique-box \{\
-  border: 1px solid var(--line);\
-  padding: 55px;\
-  display: grid;\
-  grid-template-columns: 1fr 1fr;\
-  gap: 50px;\
-  background: rgba(255,255,255,.46);\
-\}\
-\
-.unique-list \{\
-  display: grid;\
-  gap: 18px;\
-\}\
-\
-.unique-list div \{\
-  padding-bottom: 18px;\
-  border-bottom: 1px solid var(--line);\
-  font-size: 18px;\
-\}\
-\
-/* ---------- CONTACT ---------- */\
-\
-.contact \{\
-  text-align: center;\
-\}\
-\
-.contact h2 \{\
-  max-width: 850px;\
-  margin: auto;\
-\}\
-\
-.contact p \{\
-  margin: 24px auto 34px;\
-  max-width: 620px;\
-  color: #4f554b;\
-  font-size: 18px;\
-  line-height: 1.7;\
-\}\
-\
-/* ---------- FOOTER ---------- */\
-\
-footer \{\
-  padding: 34px 7%;\
-  border-top: 1px solid var(--line);\
-  display: flex;\
-  justify-content: space-between;\
-  color: #777267;\
-  font-size: 14px;\
-\}\
-\
-/* ---------- SCROLL REVEAL ---------- */\
-\
-.reveal \{\
-  opacity: 0;\
-  transform: translateY(35px);\
-  transition: 1s ease;\
-\}\
-\
-.reveal.active \{\
-  opacity: 1;\
-  transform: translateY(0);\
-\}\
-\
-/* ---------- RESPONSIVE ---------- */\
-\
-@media (max-width: 950px) \{\
-  nav \{\
-    position: relative;\
-    flex-direction: column;\
-    gap: 18px;\
-  \}\
-\
-  .nav-links a \{\
-    margin: 0 8px;\
-    font-size: 11px;\
-  \}\
-\
-  .hero,\
-  .split,\
-  .unique-box \{\
-    grid-template-columns: 1fr;\
-  \}\
-\
-  .hero \{\
-    padding-top: 80px;\
-  \}\
-\
-  .orbit \{\
-    width: 310px;\
-    height: 310px;\
-  \}\
-\
-  .orbit-center \{\
-    inset: 85px;\
-    font-size: 24px;\
-  \}\
-\
-  .services-grid,\
-  .process-grid \{\
-    grid-template-columns: 1fr;\
-  \}\
-\
-  footer \{\
-    flex-direction: column;\
-    gap: 10px;\
-    text-align: center;\
-  \}\
-\}\
-</style>\
-</head>\
-\
-<body>\
-\
-<nav>\
-  <div class="logo">\
-    OLIVE\
-    <small>ADVISORY</small>\
-  </div>\
-\
-  <div class="nav-links">\
-    <a href="#services">Services</a>\
-    <a href="#approach">Approach</a>\
-    <a href="#why">Why Olive</a>\
-    <a href="#contact">Contact</a>\
-  </div>\
-</nav>\
-\
-<section class="hero">\
-  <div class="hero-content">\
-    <div class="kicker">Fractional CFO \'b7 Bookkeeping \'b7 Strategic Finance</div>\
-\
-    <h1>\
-      Financial clarity for businesses ready to <em>grow differently.</em>\
-    </h1>\
-\
-    <p>\
-      Olive Advisory helps business owners clean up their numbers, understand cash flow,\
-      improve profitability, and make confident financial decisions.\
-    </p>\
-\
-    <div class="buttons">\
-      <a class="btn btn-primary" href="mailto:harleysbrooks@gmail.com">Start a Conversation</a>\
-      <a class="btn btn-secondary" href="#services">Explore Services</a>\
-    </div>\
-  </div>\
-\
-  <div class="orbit-wrap">\
-    <div class="orbit">\
-      <div class="orbit-center">\
-        Cash Flow<br>\
-        Strategy<br>\
-        Growth\
-      </div>\
-    </div>\
-  </div>\
-</section>\
-\
-<div class="marquee">\
-  <div class="marquee-track">\
-    Fractional CFO \'b7 Bookkeeping \'b7 Cash Flow Forecasting \'b7 Strategic Finance \'b7 FP&A \'b7 KPI Reporting \'b7 Profitability Analysis \'b7 \
-    Fractional CFO \'b7 Bookkeeping \'b7 Cash Flow Forecasting \'b7 Strategic Finance \'b7 FP&A \'b7 KPI Reporting \'b7 Profitability Analysis \'b7\
-  </div>\
-</div>\
-\
-<section class="split reveal" id="services">\
-  <div>\
-    <div class="kicker">Services</div>\
-    <h2>Finance support that goes beyond closing the books.</h2>\
-  </div>\
-\
-  <div class="services-grid">\
-    <div class="service-card">\
-      <span>01</span>\
-      <h3>Fractional CFO</h3>\
-      <p>\
-        Strategic financial leadership, forecasting, planning, and decision support\
-        without the cost of a full-time CFO.\
-      </p>\
-    </div>\
-\
-    <div class="service-card">\
-      <span>02</span>\
-      <h3>Bookkeeping</h3>\
-      <p>\
-        Clean, organized monthly books so you can trust your numbers and build\
-        decisions from accurate financials.\
-      </p>\
-    </div>\
-\
-    <div class="service-card">\
-      <span>03</span>\
-      <h3>Cash Flow</h3>\
-      <p>\
-        Short-term and long-term cash forecasting to help you see what is coming,\
-        what is tight, and where action is needed.\
-      </p>\
-    </div>\
-\
-    <div class="service-card">\
-      <span>04</span>\
-      <h3>Strategic Finance</h3>\
-      <p>\
-        Budgets, KPI dashboards, profitability reviews, and models built for real\
-        business decisions.\
-      </p>\
-    </div>\
-  </div>\
-</section>\
-\
-<section class="statement reveal">\
-  <h2>\
-    Most businesses do not need more reports.  \
-    They need <em>better financial visibility.</em>\
-  </h2>\
-</section>\
-\
-<section class="reveal" id="approach">\
-  <div class="kicker">Approach</div>\
-  <h2>Simple. Structured. Built around how your business actually operates.</h2>\
-\
-  <div class="process-grid">\
-    <div class="process-card">\
-      <span>01</span>\
-      <h3>Clean Up</h3>\
-      <p>\
-        Review your books, reporting, cash flow, and financial processes to identify\
-        what is unclear, outdated, or unreliable.\
-      </p>\
-    </div>\
-\
-    <div class="process-card">\
-      <span>02</span>\
-      <h3>Build Visibility</h3>\
-      <p>\
-        Create forecasts, dashboards, budgets, and reporting tools that help you\
-        understand performance in real time.\
-      </p>\
-    </div>\
-\
-    <div class="process-card">\
-      <span>03</span>\
-      <h3>Advise</h3>\
-      <p>\
-        Provide ongoing CFO-level guidance so you can make better decisions,\
-        manage growth, and protect cash.\
-      </p>\
-    </div>\
-  </div>\
-</section>\
-\
-<section class="unique reveal" id="why">\
-  <div class="unique-box">\
-    <div>\
-      <div class="kicker">Why Olive</div>\
-      <h2>A calmer way to understand the numbers.</h2>\
-    </div>\
-\
-    <div class="unique-list">\
-      <div>Clarity without overcomplication.</div>\
-      <div>Bookkeeping that supports strategic decision-making.</div>\
-      <div>Forecasts that show what is actually coming.</div>\
-      <div>Financial guidance that feels practical, not theoretical.</div>\
-      <div>Support for owners who want confidence before making big moves.</div>\
-    </div>\
-  </div>\
-</section>\
-\
-<section class="contact reveal" id="contact">\
-  <div class="kicker">Contact</div>\
-  <h2>Ready to bring more clarity to your business finances?</h2>\
-\
-  <p>\
-    Olive Advisory works with growing businesses that need cleaner books,\
-    stronger cash flow visibility, and strategic financial support.\
-  </p>\
-\
-  <a class="btn btn-primary" href="mailto:harleysbrooks@gmail.com">Contact Olive Advisory</a>\
-</section>\
-\
-<footer>\
-  <div>\'a9 2026 Olive Advisory</div>\
-  <div>Fractional CFO \'b7 Bookkeeping \'b7 Strategic Finance</div>\
-</footer>\
-\
-<script>\
-const reveals = document.querySelectorAll(".reveal");\
-\
-function revealOnScroll() \{\
-  reveals.forEach((section) => \{\
-    const top = section.getBoundingClientRect().top;\
-    if (top < window.innerHeight - 120) \{\
-      section.classList.add("active");\
-    \}\
-  \});\
-\}\
-\
-window.addEventListener("scroll", revealOnScroll);\
-revealOnScroll();\
-</script>\
-\
-</body>\
-</html>}
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Fractional CFO · Bookkeeping · Strategic Finance</p>
+        <h1>Financial clarity for businesses ready to <em>grow differently.</em></h1>
+        <p class="hero-text">Olive Advisory helps business owners clean up their numbers, understand cash flow, improve profitability, and make confident financial decisions.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="mailto:harleysbrooks@gmail.com">Start a Conversation</a>
+          <a class="btn secondary" href="#services">Explore Services</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="orbital-card">
+          <div class="ring ring-one"></div>
+          <div class="ring ring-two"></div>
+          <div class="dot dot-one"></div>
+          <div class="dot dot-two"></div>
+          <div class="center-card">
+            <span>Cash Flow</span>
+            <span>Strategy</span>
+            <span>Growth</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Services marquee">
+      <div class="marquee-track">
+        <span>Fractional CFO</span><span>Bookkeeping</span><span>Cash Flow Forecasting</span><span>Strategic Finance</span><span>FP&A</span><span>KPI Reporting</span><span>Profitability Analysis</span>
+        <span>Fractional CFO</span><span>Bookkeeping</span><span>Cash Flow Forecasting</span><span>Strategic Finance</span><span>FP&A</span><span>KPI Reporting</span><span>Profitability Analysis</span>
+      </div>
+    </section>
+
+    <section id="services" class="section split reveal">
+      <div class="section-intro sticky-intro">
+        <p class="eyebrow">Services</p>
+        <h2>Finance support that goes beyond closing the books.</h2>
+        <p>Clean numbers are the foundation. The real value is knowing what they mean, where cash is going, and what to do next.</p>
+      </div>
+      <div class="service-stack">
+        <article class="service-card">
+          <span class="number">01</span>
+          <h3>Fractional CFO</h3>
+          <p>Strategic financial leadership, forecasting, planning, and decision support without the cost of a full-time CFO.</p>
+        </article>
+        <article class="service-card">
+          <span class="number">02</span>
+          <h3>Bookkeeping</h3>
+          <p>Clean, organized monthly books so you can trust your numbers and make decisions from accurate financials.</p>
+        </article>
+        <article class="service-card">
+          <span class="number">03</span>
+          <h3>Cash Flow</h3>
+          <p>Short-term and long-term cash forecasting to help you see what is coming, what is tight, and where action is needed.</p>
+        </article>
+        <article class="service-card">
+          <span class="number">04</span>
+          <h3>Strategic Finance</h3>
+          <p>Budgets, KPI dashboards, profitability reviews, and models built for real business decisions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="statement reveal">
+      <div class="statement-bg">OLIVE</div>
+      <h2>Most businesses do not need more reports. They need <em>better financial visibility.</em></h2>
+    </section>
+
+    <section id="approach" class="section reveal">
+      <p class="eyebrow">Approach</p>
+      <h2 class="wide-heading">Simple. Structured. Built around how your business actually operates.</h2>
+      <div class="process-grid">
+        <article class="process-card">
+          <span>01</span>
+          <h3>Clean Up</h3>
+          <p>Review your books, reporting, cash flow, and financial processes to identify what is unclear, outdated, or unreliable.</p>
+        </article>
+        <article class="process-card">
+          <span>02</span>
+          <h3>Build Visibility</h3>
+          <p>Create forecasts, dashboards, budgets, and reporting tools that help you understand performance in real time.</p>
+        </article>
+        <article class="process-card">
+          <span>03</span>
+          <h3>Advise</h3>
+          <p>Provide ongoing CFO-level guidance so you can make better decisions, manage growth, and protect cash.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="why" class="section feature reveal">
+      <div>
+        <p class="eyebrow">Why Olive</p>
+        <h2>A calmer way to understand the numbers.</h2>
+      </div>
+      <div class="feature-list">
+        <p>Clarity without overcomplication.</p>
+        <p>Bookkeeping that supports strategic decision-making.</p>
+        <p>Forecasts that show what is actually coming.</p>
+        <p>Financial guidance that feels practical, not theoretical.</p>
+        <p>Support for owners who want confidence before making big moves.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Ready to bring more clarity to your business finances?</h2>
+      <p>Olive Advisory works with growing businesses that need cleaner books, stronger cash flow visibility, and strategic financial support.</p>
+      <a class="btn primary" href="mailto:harleysbrooks@gmail.com">Contact Olive Advisory</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Olive Advisory</p>
+    <p>Fractional CFO · Bookkeeping · Strategic Finance</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
