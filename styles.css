@@ -34,3 +34,11 @@
     margin: 30px auto 0;
   }
 }
+.hero {
+  background: #f7f1e8;
+}
+
+.tree-visual img {
+  mix-blend-mode: multiply;
+  filter: drop-shadow(0 20px 35px rgba(23, 32, 25, 0.08));
+}
