@@ -11,11 +11,27 @@
 }
 
 .tree-visual img {
+width: 620px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  animation: treeFloat 6s ease-in-out infinite;
+}
+
+.tree-visual img {
   width: 100%;
   height: auto;
   display: block;
   object-fit: contain;
-  filter: drop-shadow(0 20px 35px rgba(23, 32, 25, 0.08));
+  mix-blend-mode: multiply;
+  opacity: 0.92;
+  filter: none;
+
+  /* Makes the actual tree larger */
+  transform: scale(1.6);
+  transform-origin: center center;
 }
 
 @keyframes treeFloat {
@@ -28,39 +44,14 @@
   }
 }
 
-@media(max-width:950px){.site-header{position:relative;flex-direction:column;gap:18px}.nav a{margin:0 8px;font-size:11px}.hero,.split,.feature{grid-template-columns:1fr}.hero{padding-top:80px}.orbital-card{width:310px;height:310px}.center-card{inset:88px;font-size:23px}.service-stack,.process-grid{grid-template-columns:1fr}.sticky-intro{position:relative;top:0}.footer{flex-direction:column;text-align:center;gap:10px}.section{padding:78px 7%}}
-
-.tree-visual {
-  width: 900px;
-  max-width: none;
-  animation: treeFloat 6s ease-in-out infinite;
-}
-
-.tree-visual img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  mix-blend-mode: multiply;
-  opacity: 0.92;
-  filter: none;
-}
-
-@keyframes treeFloat {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-16px);
-  }
-}
-
-@media(max-width:950px) {
+@media (max-width: 950px) {
   .tree-visual {
-    width: 110vw;
-    max-width: none;
+    width: 620px;
+    max-width: 100%;
     margin: 30px auto 0;
+  }
+
+  .tree-visual img {
+    transform: scale(1.3);
   }
 }
